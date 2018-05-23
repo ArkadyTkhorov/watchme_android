@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "342782144531",
+    "firebase_url": "https://watch-me-app.firebaseio.com",
+    "project_id": "watch-me-app",
+    "storage_bucket": "watch-me-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342782144531:android:071236596b1cf4f2",
+        "android_client_info": {
+          "package_name": "com.androidapp.watchme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342782144531-q29biqmh3hd9vapb8qjntf6dsoqn92el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXLkgQ5T6BOZt2R6l7RPaH0DfP8gNTWFk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

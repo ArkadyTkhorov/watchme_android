@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">WatchMe</string>
+
+    <string name="watch">watch</string>
+    <string name="me">me</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign up</string>
+    <string name="login">Log in</string>
+    <string name="input_name">Please input name</string>
+    <string name="input_email">Please input email address</string>
+    <string name="input_buddy_email">Please input email address of your buddy</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="input_password">Please input password</string>
+
+    <string name="signup_failed">SignUp Failed</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="sent_email">Sent email for new password</string>
+    <string name="failed_to_send_email">Failed to send email</string>
+    <string name="profile_updated">Profile was updated successfully</string>
+
+    <string name="account_setup">Account setup</string>
+    <string name="user">User</string>
+    <string name="user_desc">Monitor this device with screenshots.</string>
+    <string name="buddy">Buddy</string>
+    <string name="buddy_desc">Receive screenshots with this app.</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="assign_buddy_title">Assign buddy (Recipient)</string>
+    <string name="assign_buddy_desc">Your buddy gets all of your screenshots on a daily basis for review.\n\nAssign someone you trust like a spouse, mom, or beat bud.</string>
+    <string name="assign_buddy">Assign buddy</string>
+
+    <string name="forgot_password">Forgot password</string>
+    <string name="reset_password">Reset password</string>
+
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="log_out">Log out</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="all_set">All set!</string>
+    <string name="main_desc">Your buddy gets all of your screenshots.\n\nWay to go on making this decision to build trust and confidence!\n\nMore power to you!</string>
+
+    <string name="contact_email">getwatchmeapp@gmail.com</string>
+    <string name="email_subject">Message from Watchme user</string>
+
+    <string name="my_account">My account</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="buddy_recipient">Buddy (Recipient)</string>
+
+    <string name="users">users</string>
+    <string name="screenshots">screenshots</string>
+    <string name="user_id">user-id</string>
+    <string name="user_type">type</string>
+    <string name="date">Date</string>
+
+    <string name="firebase_storage_url">gs://watch-me-app.appspot.com/</string>
+
+    <string name="screen_shot_list">screen-shot-list</string>
+    <string name="index">index</string>
+    <string name="Enable">Activate </string>
+    <string name="cancel">Cancel</string>
+    <string name="setup_device">Device Setup</string>
+    <string name="active">\Please activate device administrator for your device to report any uninstall activity to your buddy.</string>
+    <string name="activ2" />
+    <string name="active2">We DO NOT use device admin for anything other than this :)</string>
+    <string name="desc">Click "Activate" to complete this step.\n\n This step is mandatory to use Watchme correctly.</string>
+    <string name="notifCont">Remember to make good choices!</string>
+</resources>

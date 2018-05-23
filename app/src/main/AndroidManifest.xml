@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.androidapp.watchme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.READ_FRAME_BUFFER"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SignupActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChooseAccountTypeActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AssignBuddyActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ScreenShotFullScreenActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".util.reciver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".util.AdminReciver"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+        <meta-data
+            android:name="android.app.device_admin"
+            android:resource="@xml/device_policies" />
+
+        <intent-filter>
+            <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+            <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+
+        </intent-filter>
+
+        </receiver>
+        <service
+            android:name=".util.ScreenShotService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".activity.TransparntActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.AdminActivity" android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

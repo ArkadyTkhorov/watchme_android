@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">342782144531-q29biqmh3hd9vapb8qjntf6dsoqn92el.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://watch-me-app.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">342782144531</string>
+    <string name="google_api_key" translatable="false">AIzaSyAXLkgQ5T6BOZt2R6l7RPaH0DfP8gNTWFk</string>
+    <string name="google_app_id" translatable="false">1:342782144531:android:071236596b1cf4f2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAXLkgQ5T6BOZt2R6l7RPaH0DfP8gNTWFk</string>
+    <string name="google_storage_bucket" translatable="false">watch-me-app.appspot.com</string>
+    <string name="project_id" translatable="false">watch-me-app</string>
+</resources>

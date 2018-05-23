@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.androidapp.watchme.activity.ChooseAccountTypeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_setup"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/userTypeLayout"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <RelativeLayout
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/userSelectedLayout"
+            android:background="@drawable/circle_background"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:src="@drawable/tick"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_desc"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/unselected_background"
+        android:id="@+id/buddyTypeLayout"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <RelativeLayout
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/buddySelectedLayout"
+            android:background="@drawable/circle_background"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:src="@drawable/tick"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/confirmBtn"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/confirm"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
